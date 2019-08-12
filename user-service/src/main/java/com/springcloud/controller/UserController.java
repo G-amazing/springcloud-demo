@@ -36,4 +36,10 @@ public class UserController {
         return "login-error";
     }
 
+    @PostMapping("/user/create")
+    @ResponseBody
+    public void create(@RequestBody User user) {
+        userService.create(user);
+    }
+
 }

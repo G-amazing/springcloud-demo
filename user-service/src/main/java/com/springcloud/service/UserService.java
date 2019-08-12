@@ -25,4 +25,8 @@ public class UserService {
         }
         return true;
     }
+
+    public void create(User user) {
+        userMapper.create(user.getAge());
+    }
 }

@@ -13,4 +13,9 @@ public class UserClientImpl implements UserClient{
         user.setName("服务器内部错误");
         return user;
     }
+
+    @Override
+    public void create(User user) {
+
+    }
 }

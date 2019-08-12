@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: info-service
+  datasource:
+      url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password:
 eureka:
   client:
     service-url:
@@ -15,3 +19,5 @@ feign:
   hystrix:
     #开启熔断器
     enabled: true
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

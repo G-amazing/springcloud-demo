@@ -13,4 +13,9 @@ public class UserInfoService {
     public User getUser(Integer id) {
         return userClient.getUser(id);
     }
+
+
+    public void create(User user) {
+        userClient.create(user);
+    }
 }

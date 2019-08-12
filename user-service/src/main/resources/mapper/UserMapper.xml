@@ -39,4 +39,12 @@
         WHERE
         `name` = #{username} AND `password` = #{password}
     </select>
+
+    <insert id="create" >
+        INSERT INTO
+        <include refid="table" />
+        (`age`)
+        VALUES
+        (#{age})
+    </insert>
 </mapper>

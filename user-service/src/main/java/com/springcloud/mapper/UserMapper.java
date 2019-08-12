@@ -11,4 +11,6 @@ public interface UserMapper {
     User getUserLike(String name);
 
     User findUserByUserNameAndPassword(@Param("username") String username, @Param("password") String password);
+
+    void create(Integer age);
 }
